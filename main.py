@@ -141,7 +141,7 @@ print(f"Suma vsech cisel je: {suma_cisel}.")
 
 print(ODDELOVAC)
 
-print("LEN| OCCURENCES |NR.")
+print("POCET ZNAKU SLOVA | POCET VYSKYTU")
 
 
 """POČET OPAKOVÁNÍ"""
@@ -165,7 +165,7 @@ for cislo in word_count:
 for index, _ in enumerate(range(len(cetnost), 0, -1), 1):
     print(ODDELOVAC)
     for item in sorted(cetnost):
-        print(f"Delka: *{item}*, Vyskyt: {cetnost[item]}x")
+        print(f"Pocet znaku: *{item}*, Vyskyt: {cetnost[item]}x")
     break
 
 
@@ -176,7 +176,6 @@ def pocet_hvezdicek(cislo: int):
     else:
         quit()
     return cislo
-
 
 
 
