@@ -41,7 +41,6 @@ print(ODDELOVAC)
 
 vyber_textu = input("Vyber si, ktery text chces analyzovat (1,2,3): ")
 
-print(ODDELOVAC)
 
 if not vyber_textu.isnumeric():
     print("Zadaná hodnota není číslo. Ukončuji program.")
@@ -144,7 +143,6 @@ print(ODDELOVAC)
 
 print("LEN| OCCURENCES |NR.")
 
-print(ODDELOVAC)
 
 """POČET OPAKOVÁNÍ"""
 
@@ -166,11 +164,18 @@ for cislo in word_count:
 
 for index, _ in enumerate(range(len(cetnost), 0, -1), 1):
     print(ODDELOVAC)
-    for item in cetnost:
+    for item in sorted(cetnost):
         print(f"Delka: *{item}*, Vyskyt: {cetnost[item]}x")
     break
 
 
+
+def pocet_hvezdicek(cislo: int):
+    if cislo >= 1:
+        cislo = (cislo * "*")
+    else:
+        quit()
+    return cislo
 
 
 
